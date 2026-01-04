@@ -1,4 +1,4 @@
-# ComfyUI_VideoCutHelper
+# ComfyUI_YC_VideoCutHelper
 
 A simple ComfyUI plugin that Its purpose and function is to replicate some of the editing effects of capcut,jianying and pr.
 
