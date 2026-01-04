@@ -75,7 +75,7 @@ class YCImagePushPullLens:
     RETURN_TYPES = ("IMAGE", "MASK")
     RETURN_NAMES = ("frames", "masks")
     FUNCTION = "push_pull_lens"
-    CATEGORY = "SwiftCut/Image"
+    CATEGORY = "YC_VideoCutHelper/Image"
 
     def push_pull_lens(self, image, frames, start_crop_ratio, middle_crop_ratio, end_crop_ratio, middle_frame, input_mode):
         """推拉镜头处理 - 支持单张图片生成多帧和多帧图片分别处理"""
@@ -238,7 +238,7 @@ class YCImageOverlayBlend:
     RETURN_TYPES = ("IMAGE", "MASK")
     RETURN_NAMES = ("blended_frames", "alpha_masks")
     FUNCTION = "overlay_blend"
-    CATEGORY = "SwiftCut/Image"
+    CATEGORY = "YC_VideoCutHelper/Image"
 
     def overlay_blend(self, frames, background_color, start_alpha_ratio, middle_alpha_ratio, end_alpha_ratio, middle_frame, blend_mode):
         """多帧图片叠加混合处理"""
@@ -374,7 +374,7 @@ class YCImageBatchBlend:
     RETURN_TYPES = ("IMAGE",)
     RETURN_NAMES = ("blended_images",)
     FUNCTION = "batch_blend"
-    CATEGORY = "SwiftCut/Image"
+    CATEGORY = "YC_VideoCutHelper/Image"
 
     def batch_blend(self, image1, image2, blend_factor, blend_mode):
         """多批次图像混合处理"""
